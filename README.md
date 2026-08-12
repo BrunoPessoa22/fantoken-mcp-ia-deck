@@ -1,6 +1,6 @@
 # Esporte, Fan Token, MCP e IA — Keynote deck
 
-Deck for Bruno Pessoa's keynote at the **AI Stage, Blockchain.Rio 2026** (ExpoRio, Rio de Janeiro — Aug 12 2026, 16:15–16:40, Day 1). Content in PT-BR, Chiliz brand system. 16 slides, 1280×720, pure HTML/CSS — no framework.
+Deck for Bruno Pessoa's keynote at the **AI Stage, Blockchain.Rio 2026** (ExpoRio, Rio de Janeiro — Aug 12 2026, 16:15–16:40, Day 1). Content in PT-BR, Chiliz brand system. 17 slides, 1280×720, pure HTML/CSS — no framework.
 
 - **Live:** https://keynote.brunopessoa.com
 - **`esporte-fantoken-mcp-ia.pdf`** — the sendable/AV-desk deliverable (exact 1280×720 pages).
@@ -27,6 +27,7 @@ Deck for Bruno Pessoa's keynote at the **AI Stage, Blockchain.Rio 2026** (ExpoRi
 2. **O protocolo** — what MCP is; Fan Token Intel as the first fan-token MCP server (120+ tools, odds tape incl. the 2026 WC final).
 3. **O agente** — agentic trading; "the LLM proposes, code decides" risk architecture; the honest war stories (50.8% whale signal killed, WC-final post-mortem, first agent-executed fan-token perp).
 4. **A fusão** — x402 agent payments on the OKX OnchainOS marketplace; the full loop: match → data → thesis → gate → execution.
+5. **Novidade (slide 16)** — Fan Tokens™ live on Solana (official Chiliz registry, LayerZero OFT, 10 tradeable as of Jul 2026, SPAIN/ARG/PSG most liquid), the cross-chain data opportunity for the FTI MCP, the Solana-ready roadmap, and a QR code (segno-generated, `assets/qr_datauri.txt`) pointing to fantokenintel.com.
 
 ## Content notes
 
