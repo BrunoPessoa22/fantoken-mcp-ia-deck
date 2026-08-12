@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Esporte, Fan Token, MCP e IA — Bruno Pessoa · Blockchain.Rio 2026</title>
+<title>Fan Token, MCP e IA — Bruno Pessoa · Blockchain.Rio 2026</title>
 <meta name="description" content="Keynote de Bruno Pessoa (Chiliz) no AI Stage do Blockchain.Rio 2026: como Fan Tokens™, o Model Context Protocol e agentes de IA com carteira se encontram.">
 <style>
 /*__FONTFACE__*/
@@ -139,11 +139,11 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 .layer .tx b{color:var(--white)}
 
 /* chat mock */
-.chat{margin-top:22px;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.chat{margin-top:16px;display:flex;flex-direction:column;gap:10px;max-width:1020px}
 .chat .who{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;
   color:var(--faint);text-transform:uppercase;margin-top:6px}
 .chat .who.right{align-self:flex-end}
-.msg{padding:18px 26px;font-size:23px;line-height:1.45;max-width:820px}
+.msg{padding:15px 24px;font-size:21px;line-height:1.42;max-width:820px}
 .msg.user{align-self:flex-end;background:var(--eclipse);color:var(--white)}
 .msg.agent{align-self:flex-start;background:var(--panel);color:var(--dim)}
 .msg.agent b{color:var(--white)}
@@ -177,6 +177,17 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
 .cl-band{position:absolute;bottom:0;left:0;right:0}
 
+
+/* v2 — first-timer deck: tighter stacks so analogy slides never overflow 720px */
+.stack{margin-top:24px}
+.layer{padding:15px 24px}
+.layer .tx{font-size:20px;line-height:1.42}
+.stack + .railband{margin-top:26px}
+.stack.narrow .layer{grid-template-columns:190px 1fr}
+.footline.big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:33px;
+  line-height:1.2;bottom:116px;right:440px;color:var(--white)}
+.signoff{bottom:62px}
+
 /* print */
 @media print{
   @page{size:1280px 720px;margin:0}
@@ -197,15 +208,15 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 <div class="stage-wrap">
 <div id="stage">
 
-<!-- 01 COVER -->
+<!-- 01 CAPA · A CENA -->
 <section class="slide">
   <div class="cv-lock"><img class="chz" src="__CHILIZ__" alt="Chiliz"></div>
   <div class="cv-conf">AI Stage · Blockchain.Rio 2026<br>ExpoRio · Rio de Janeiro</div>
   <div class="cv-global">Esporte · Keynote</div>
-  <div class="cv-title cv-l1">FAN TOKEN,</div>
+  <div class="cv-title cv-l1">MINUTO 90.</div>
   <div class="band cv-band"></div>
-  <div class="cv-title cv-l2">MCP <span class="cv-dot">&amp;</span> IA</div>
-  <div class="cv-sub">O Brasil é o <b>maior mercado de Fan Tokens™ do mundo</b>. A IA acabou de ganhar carteira.<br><b>E hoje eu trago uma novidade que muda a distribuição do ativo.</b></div>
+  <div class="cv-title cv-l2">O PREÇO MEXE.</div>
+  <div class="cv-sub">Existe um mercado cujo catalisador tem <b>data, hora e transmissão na Globo</b>.<br>E ele acabou de ganhar um comprador novo: <b>máquina</b>.</div>
   <div class="termsheet">
     <div class="k">Quem</div><div class="v">Bruno Pessoa</div>
     <div class="k">Cargo</div><div class="v">Head of Strategic Innovations · Chiliz</div>
@@ -214,91 +225,144 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   </div>
 </section>
 
-<!-- 02 ROTEIRO -->
+<!-- 02 A PERGUNTA + ROTEIRO -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Esporte, Fan Token, MCP &amp; IA</span><span>Roteiro</span></div>
+  <div class="chrome"><span>Fan Token, MCP &amp; IA</span><span>A pergunta</span></div>
   <div class="body-top">
-    <div class="kick">Roteiro</div>
-    <div class="h1">Quatro peças. Uma novidade no fim.</div>
-    <div class="lead">Nada aqui é teoria. <b>Tudo está em produção</b> — com dinheiro real e cicatrizes documentadas.</div>
+    <div class="kick">A pergunta desta palestra</div>
+    <div class="h1">E se quem compra o seu produto <span class="thin">deixar de ser gente?</span></div>
+    <div class="lead">Hoje o seu cliente é humano. Em pouco tempo quem vai ler o seu site, escolher o seu dado e <b>pagar por ele</b> é um agente de IA. Isso já está acontecendo — e começou pelo esporte.</div>
     <div class="metro m4">
       <div class="rail"></div>
       <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">1 · O ativo</div><div class="b">Fan Token™ — o token que reage ao jogo</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">2 · O protocolo</div><div class="b">MCP — e o Fan Token Intel</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">3 · O agente</div><div class="b">Tese, risco, execução — e a carteira</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">4 · A novidade</div><div class="b">Fan Tokens™ na Solana</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">1 · O ativo</div><div class="b">Fan Token — o clube com cotação</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">2 · O agente</div><div class="b">O que ele faz, e o que falta nele</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">3 · A tomada</div><div class="b">MCP — como a IA lê o mundo</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">4 · O troco</div><div class="b">x402 — como a máquina paga</div></div>
       </div>
     </div>
-    <div class="railband">Regra da casa: números reais, <span class="g">inclusive os prejuízos</span>.</div>
+    <div class="railband">Zero teoria. E no fim tem <span class="g">uma novidade que ninguém aqui viu ainda</span>.</div>
   </div>
   <div class="src">Conteúdo educacional — nada nesta apresentação é recomendação de investimento</div>
 </section>
 
-<!-- 03 O QUE É FAN TOKEN -->
+<!-- 03 O ATIVO · ANALOGIA -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 1 · O ativo</span><span>Fan Tokens™</span></div>
+  <div class="chrome"><span>Parte 1 · O ativo</span><span>Fan Token</span></div>
   <div class="body-top">
     <div class="kick">Parte 1 · O ativo</div>
-    <div class="h1">Fan Token™: o clube no bolso do torcedor.</div>
-    <div class="lanes">
-      <div class="lane"><div class="cap">O que é</div><div class="b">Token de utilidade do clube, na <b>Chiliz Chain</b>, via <b>Socios.com</b>.</div></div>
-      <div class="lane"><div class="cap">O que dá</div><div class="b">Voto, experiências, acesso — <b>engajamento com preço de mercado</b>.</div></div>
-      <div class="lane"><div class="cap">O que não é</div><div class="b">Não é ação nem promessa de lucro. É <b>participação de torcida</b>.</div></div>
+    <div class="h1" style="font-size:47px">Fan Token é tipo carteirinha de sócio — <span style="color:var(--pepper)">só que com cotação</span>.</div>
+    <div class="stack">
+      <div class="layer hot"><div class="lb">É tipo</div><div class="tx">A carteirinha de sócio do seu clube. <b>Só que ela tem preço — e o preço mexe.</b></div></div>
+      <div class="layer"><div class="lb">Na prática</div><div class="tx">Token do clube na <b>Chiliz Chain</b>, comprado no <b>Socios.com</b>. Dá voto, experiência e acesso.</div></div>
+      <div class="layer"><div class="lb">O que não é</div><div class="tx">Não é ação, não é promessa de lucro. É <b>participação de torcida</b> com mercado.</div></div>
     </div>
-    <div class="railband"><b>65+ Fan Tokens™</b> de clubes e seleções · <span class="g">Brasil: o maior mercado do mundo</span></div>
+    <div class="railband">65+ clubes e seleções desde 2018 — e o <span class="g">Brasil é o maior mercado do mundo</span>.</div>
   </div>
-  <div class="src">Fonte: Chiliz · Socios.com · desde 2018</div>
+  <div class="src">Fonte: Chiliz · Socios.com</div>
 </section>
 
-<!-- 04 O ATIVO COM CALENDÁRIO -->
+<!-- 04 POR QUE ESSE ATIVO É ÚNICO -->
 <section class="slide">
   <div class="field">
     <div class="lbl">Matchdays medidos</div>
     <div class="big">440</div>
     <div class="hr"></div>
-    <div class="note">Cada linha liga um <b>jogo real</b> a uma <b>reação real de preço</b>. A base que nenhum feed genérico tem.</div>
+    <div class="note">Cada linha liga um <b>jogo real</b> a uma <b>reação real de preço</b>. Nenhum feed genérico de cripto tem isso.</div>
   </div>
-  <div class="field-left" style="top:130px">
+  <div class="field-left" style="top:128px">
     <div class="kick">Parte 1 · O ativo</div>
-    <div class="h1" style="font-size:44px">O único ativo que anuncia o catalisador semanas antes.</div>
-    <div class="lead" style="max-width:600px;margin-top:20px;font-size:24px">Ação reage a balanço.<br>Cripto reage a macro.<br><b>Fan Token™ reage a jogo.</b></div>
-    <div class="railband" style="margin-top:34px;font-size:24px">O empate custa caro: <span class="g">queda média de ~1,7% em 24h</span>.</div>
+    <div class="h1" style="font-size:44px">O único ativo que avisa o catalisador semanas antes.</div>
+    <div class="lead" style="max-width:600px;margin-top:20px;font-size:23px">Ação reage a balanço.<br>Cripto reage a macro — e ninguém sabe quando.<br><b>Fan Token reage a jogo.</b> E jogo tem data marcada.</div>
+    <div class="railband" style="margin-top:30px;font-size:23px">O empate custa caro: <span class="g">queda média de ~1,7% em 24h</span>.</div>
   </div>
   <div class="src" style="right:640px;bottom:12px">Fonte: Fan Token Intel · dados históricos · educacional, não é recomendação</div>
 </section>
 
-<!-- 05 MCP -->
+<!-- 05 O BRASIL -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 2 · O protocolo</span><span>Model Context Protocol</span></div>
+  <div class="chrome"><span>Parte 1 · O ativo</span><span>Brasil</span></div>
   <div class="body-top">
-    <div class="kick">Parte 2 · O protocolo</div>
-    <div class="h1">MCP: a tomada padrão da inteligência artificial.</div>
-    <div class="lead"><b>Model Context Protocol</b> — padrão aberto lançado pela Anthropic, hoje também na OpenAI, Google e Microsoft.</div>
-    <div class="lanes">
-      <div class="lane"><div class="cap">Antes do MCP</div><div class="b">Cada modelo × cada sistema = <b>uma integração sob medida</b>.</div></div>
-      <div class="lane"><div class="cap">Com MCP</div><div class="b">Um servidor, uma vez — <b>e toda IA conecta</b>.</div></div>
+    <div class="kick">Parte 1 · O ativo</div>
+    <div class="h1">E o maior mercado desse ativo <span style="color:var(--pepper)">é aqui</span>.</div>
+    <div class="lead">Não é "o Brasil promissor". É o Brasil em <b>primeiro lugar</b>: a torcida que mais compra, mais vota e mais negocia Fan Token no mundo.</div>
+    <div class="statwall">
+      <div class="stat"><div class="n">65<small>+</small></div><div class="l">clubes e seleções com token</div></div>
+      <div class="stat"><div class="n">#1</div><div class="l">Brasil no mercado global</div></div>
+      <div class="stat"><div class="n">440</div><div class="l">matchdays já medidos</div></div>
+      <div class="stat"><div class="n">1.052</div><div class="l">reações de preço fora do padrão</div></div>
     </div>
-    <div class="railband">Quem tem o dado <span class="g">vira infraestrutura</span>.</div>
+    <div class="railband">Torcida grande + calendário público = <span class="g">a base de dados mais rica que esse setor já teve</span>.</div>
   </div>
-  <div class="src">Model Context Protocol — modelcontextprotocol.io · padrão aberto, novembro de 2024</div>
+  <div class="src">Fonte: Chiliz · Fan Token Intel · jul 2026</div>
 </section>
 
-<!-- 06 FAN TOKEN INTEL -->
+<!-- 06 O AGENTE · ANALOGIA -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 2 · O protocolo</span><span>fantokenintel.com</span></div>
+  <div class="chrome"><span>Parte 2 · O agente</span><span>O que é um agente</span></div>
   <div class="body-top">
-    <div class="kick">Parte 2 · O protocolo</div>
-    <div class="h1">Fan Token Intel: o primeiro MCP de Fan Tokens™ do mundo.</div>
-    <div class="lead">Qualquer agente de IA lê o mercado de fan tokens: <b>preço, baleias, impacto de partida, odds, liquidez</b>.</div>
+    <div class="kick">Parte 2 · O agente</div>
+    <div class="h1">ChatGPT responde. <span style="color:var(--pepper)">Agente faz.</span></div>
+    <div class="stack">
+      <div class="layer"><div class="lb">Chatbot</div><div class="tx">Você pergunta, ele responde. <b>Acabou ali.</b></div></div>
+      <div class="layer hot"><div class="lb">Agente</div><div class="tx">Você dá um objetivo. Ele <b>busca o dado, decide, executa</b> e volta com o resultado feito.</div></div>
+      <div class="layer"><div class="lb">Bot ≠ agente</div><div class="tx">Bot é escalação fixa: se acontecer X, faz Y. <b>Agente lê o jogo e mexe no time.</b></div></div>
+    </div>
+    <div class="railband">A palavra do dia é <span class="g">ferramenta</span>. Sem ferramenta na mão, é papo. Com ferramenta, é trabalho.</div>
+  </div>
+  <div class="src">Agente = modelo + ferramentas + memória + permissão para agir</div>
+</section>
+
+<!-- 07 O AGENTE É CEGO -->
+<section class="slide">
+  <div class="toprule"></div>
+  <div class="chrome"><span>Parte 2 · O agente</span><span>O problema</span></div>
+  <div class="body-top">
+    <div class="kick">Parte 2 · O agente</div>
+    <div class="h1">Só que ele é <span style="color:var(--pepper)">inteligente e cego</span>.</div>
+    <div class="lanes">
+      <div class="lane"><div class="cap">O que ele sabe</div><div class="b">Tudo o que já foi escrito na internet <b>até a data do treino</b>.</div></div>
+      <div class="lane"><div class="cap">O que ele não sabe</div><div class="b">O placar de ontem. O preço de agora. <b>A escalação de domingo.</b></div></div>
+      <div class="lane"><div class="cap">Por que isso trava tudo</div><div class="b">Sem dado fresco, ele <b>chuta com confiança</b> — que é pior do que não responder.</div></div>
+    </div>
+    <div class="railband">Agente sem dado ao vivo não é agente. <span class="g">É autocomplete caro.</span></div>
+  </div>
+  <div class="src">O gargalo da IA hoje não é inteligência. É acesso a dado confiável, na hora certa</div>
+</section>
+
+<!-- 08 MCP · ANALOGIA -->
+<section class="slide">
+  <div class="toprule"></div>
+  <div class="chrome"><span>Parte 3 · A tomada</span><span>Model Context Protocol</span></div>
+  <div class="body-top">
+    <div class="kick">Parte 3 · A tomada</div>
+    <div class="h1">MCP é tipo o <span style="color:var(--pepper)">USB-C</span> da inteligência artificial.</div>
+    <div class="stack">
+      <div class="layer"><div class="lb">Antes</div><div class="tx">Um adaptador feito à mão pra cada par. <b>10 IAs × 10 sistemas = 100 integrações.</b></div></div>
+      <div class="layer hot"><div class="lb">Com MCP</div><div class="tx">Você pluga o seu sistema <b>uma vez</b>, no padrão. E toda IA conecta.</div></div>
+      <div class="layer"><div class="lb">Quem fala</div><div class="tx">Nasceu na <b>Anthropic</b> em nov/2024. Hoje <b>OpenAI, Google e Microsoft</b> falam o mesmo protocolo.</div></div>
+    </div>
+    <div class="railband">Quem tem o dado e abre pelo padrão <span class="g">vira infraestrutura</span>.</div>
+  </div>
+  <div class="src">modelcontextprotocol.io · padrão aberto</div>
+</section>
+
+<!-- 09 FAN TOKEN INTEL -->
+<section class="slide">
+  <div class="toprule"></div>
+  <div class="chrome"><span>Parte 3 · A tomada</span><span>fantokenintel.com</span></div>
+  <div class="body-top">
+    <div class="kick">Parte 3 · A tomada</div>
+    <div class="h1">Eu construí essa tomada <span style="color:var(--pepper)">pro esporte</span>.</div>
+    <div class="lead"><b>Fan Token Intel</b> — o primeiro servidor MCP de Fan Tokens do mundo. Preço, baleias, impacto de partida, odds e liquidez: <b>qualquer agente lê</b>.</div>
     <div class="statwall">
-      <div class="stat"><div class="n">120+</div><div class="l">ferramentas de dados via MCP</div></div>
+      <div class="stat"><div class="n">120<small>+</small></div><div class="l">ferramentas de dados via MCP</div></div>
       <div class="stat"><div class="n">23,7<small>mil</small></div><div class="l">cotações de odds da Copa 2026</div></div>
-      <div class="stat"><div class="n">1.052</div><div class="l">reações de preço fora do padrão</div></div>
+      <div class="stat"><div class="n">440</div><div class="l">matchdays com reação medida</div></div>
       <div class="stat"><div class="n">9/10</div><div class="l">em auditoria externa independente</div></div>
     </div>
   </div>
@@ -306,79 +370,57 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="src">Fonte: Fan Token Intel · jul 2026 · auditoria externa independente de servidor MCP</div>
 </section>
 
-<!-- 07 NA PRÁTICA -->
+<!-- 10 DEMO -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 2 · O protocolo</span><span>Demonstração</span></div>
-  <div class="body-top" style="top:128px">
-    <div class="kick">Parte 2 · O protocolo</div>
-    <div class="h1">Na prática: pergunte ao agente.</div>
+  <div class="chrome"><span>Parte 3 · A tomada</span><span>Demonstração ao vivo</span></div>
+  <div class="body-top" style="top:126px">
+    <div class="kick">Parte 3 · A tomada</div>
+    <div class="h1" style="font-size:44px">Pergunta em português, <span style="color:var(--pepper)">resposta com dado real</span>.</div>
     <div class="chat">
       <div class="who right">Você pergunta</div>
-      <div class="msg user">O que acontece com o token do Flamengo em empate?</div>
-      <div class="who">O agente consulta o MCP</div>
+      <div class="msg user">O que acontece com o token do Flamengo quando o jogo empata?</div>
+      <div class="who">O agente escolhe a ferramenta sozinho</div>
       <div class="msg tool">→ tokenintel_match_impact_history (token: MENGO, resultado: empate)</div>
-      <div class="who">E responde com dados reais</div>
-      <div class="msg agent">Nos empates mapeados, o <b>$MENGO tende a cair nas 24h seguintes ao apito</b>. Próximo jogo em casa: domingo. <b>Quer o perfil completo?</b></div>
+      <div class="who">E responde com o dado que ele acabou de buscar</div>
+      <div class="msg agent">Nos empates mapeados, o <b>$MENGO tende a cair nas 24h seguintes ao apito</b>. <b>Quer o perfil completo?</b></div>
     </div>
-    <div class="railband" style="margin-top:12px">O dado do nicho, dentro da conversa — <span class="g">isso é um servidor MCP</span>.</div>
+    <div class="railband" style="margin-top:10px">Ninguém programou essa pergunta. <span class="g">O agente leu o menu de ferramentas e se virou.</span></div>
   </div>
-  <div class="src" style="bottom:10px">Diálogo ilustrativo sobre dados reais do Fan Token Intel · educacional, não é recomendação</div>
+  <div class="src" style="bottom:10px">Demonstração ao vivo · dados reais do Fan Token Intel · educacional, não é recomendação</div>
 </section>
 
-<!-- 08 O AGENTE -->
+<!-- 11 x402 · ANALOGIA -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 3 · O agente</span><span>Trading agêntico</span></div>
+  <div class="chrome"><span>Parte 4 · O troco</span><span>Por que cartão não serve</span></div>
   <div class="body-top">
-    <div class="kick">Parte 3 · O agente</div>
-    <div class="h1">O bot lê a regra. <span style="color:var(--pepper)">O agente lê o jogo.</span></div>
-    <div class="metro">
-      <div class="rail"></div>
-      <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">Percepção</div><div class="b">dados via MCP</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Tese</div><div class="b">o porquê, por escrito</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Proposta</div><div class="b">tamanho, entrada, saída</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Gate</div><div class="b">risco <b>em código</b></div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Execução</div><div class="b">ordem real + memória</div></div>
-      </div>
+    <div class="kick">Parte 4 · O troco</div>
+    <div class="h1">Cartão de crédito <span style="color:var(--pepper)">não foi feito pra máquina</span>.</div>
+    <div class="stack">
+      <div class="layer"><div class="lb">O problema</div><div class="tx">Cartão pede nome, CPF, cadastro e valor mínimo. Um agente que precisa pagar <b>1 centavo por consulta, 300 vezes por hora</b>, não passa nessa porta.</div></div>
+      <div class="layer hot"><div class="lb">É tipo</div><div class="tx">A <b>catraca do estádio</b>: paga por giro, entra, acabou. Ninguém assina plano anual pra ver um jogo.</div></div>
+      <div class="layer"><div class="lb">A saída</div><div class="tx">Pagamento <b>on-chain, em centavos, sem cadastro</b>. Stablecoin, assinatura, entrega — em segundos.</div></div>
     </div>
-    <div class="railband" style="margin-top:20px">A IA propõe, <span class="g">o código decide</span> — e o agente nunca vê a chave privada.</div>
+    <div class="railband">É aqui que <span class="g">IA e blockchain deixam de ser buzzword</span> e viram encanamento.</div>
   </div>
-  <div class="src">Arquitetura em produção no desk experimental do Fan Token Intel</div>
+  <div class="src">Micropagamento máquina-a-máquina · sem intermediário, sem cadastro, sem valor mínimo</div>
 </section>
 
-<!-- 09 CICATRIZES -->
-<section class="slide">
-  <div class="field">
-    <div class="lbl">Perp de fan token operado por agente</div>
-    <div class="big">1º</div>
-    <div class="hr"></div>
-    <div class="note">Julho de 2026: <b>long e short de $PSG</b> executados por um agente — com capital de teste, <b>de propósito</b>.</div>
-  </div>
-  <div class="field-left" style="top:130px">
-    <div class="kick">Parte 3 · O agente</div>
-    <div class="h1" style="font-size:44px">A final da Copa foi nossa aula mais cara.</div>
-    <div class="lead" style="max-width:600px;margin-top:18px;font-size:22px">19 de julho. Espanha 1×0 Argentina, na prorrogação. <b>Tudo o que podia dar errado, deu.</b></div>
-    <div class="railband" style="margin-top:30px;font-size:23px">Breakers, execução atômica e pós-mortem público: <span class="g">pré-requisito para religar</span>.</div>
-  </div>
-  <div class="src" style="right:640px;bottom:12px">Pós-mortem completo publicado · jul 2026 · educacional, não é recomendação</div>
-</section>
-
-<!-- 10 X402 -->
+<!-- 12 x402 · COMO FUNCIONA -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 3 · O agente</span><span>x402 · OKX</span></div>
+  <div class="chrome"><span>Parte 4 · O troco</span><span>x402 · OKX</span></div>
   <div class="body-top">
-    <div class="kick">Parte 3 · O agente</div>
-    <div class="h1">x402: o agente ganhou carteira.</div>
-    <div class="lead">O HTTP 402 — <b>"Payment Required"</b> — esperou 30 anos pelo pagador certo. Chegou: <b>o agente de IA</b>.</div>
+    <div class="kick">Parte 4 · O troco</div>
+    <div class="h1">x402: o HTTP 402 esperou <span style="color:var(--pepper)">30 anos</span> pelo pagador certo.</div>
+    <div class="lead">Em 1996 inventaram um código de resposta chamado <b>"Payment Required"</b> e nunca usaram. Faltava um cliente que pagasse sozinho, na hora, sem reclamar.</div>
     <div class="metro m4" style="margin-top:26px;height:150px">
       <div class="rail"></div>
       <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">Pedido</div><div class="b">o agente chama o dado</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">402</div><div class="b">o servidor responde o preço</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Assinatura</div><div class="b">o agente paga em stablecoin</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Pedido</div><div class="b">o agente pede o dado</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">402</div><div class="b">o servidor responde <b>o preço</b></div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Pagamento</div><div class="b">o agente assina em stablecoin</div></div>
         <div class="mstop"><div class="dot"></div><div class="h">Entrega</div><div class="b">liquidação <b>on-chain</b></div></div>
       </div>
     </div>
@@ -387,81 +429,84 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="src">Gateway x402 em produção · liquidação em USDT0 na X Layer · marketplace OKX OnchainOS</div>
 </section>
 
-<!-- 11 A NOVIDADE · SOLANA -->
+<!-- 13 PROVA · O AGENTE OPERANDO -->
 <section class="slide">
   <div class="field">
-    <div class="lbl">Fan Tokens™ registrados na Solana</div>
-    <div class="big">85</div>
+    <div class="lbl">Perp de Fan Token operado por agente</div>
+    <div class="big">1º</div>
     <div class="hr"></div>
-    <div class="note">Via <b>LayerZero OFT</b>. Não é cópia: é <b>o mesmo ativo com passaporte</b> para outra rede.</div>
+    <div class="note">Julho de 2026: <b>long e short de $PSG</b> executados por um agente. Capital de teste — <b>de propósito</b>.</div>
   </div>
   <div class="field-left" style="top:128px">
-    <div class="kick">Parte 4 · A novidade</div>
-    <div class="h1" style="font-size:50px">Fan Tokens™ agora rodam na <span style="color:var(--pepper)">Solana</span>.</div>
-    <div class="lead" style="max-width:600px;margin-top:20px;font-size:23px">Registro oficial da Chiliz. <b>SPAIN, ARG e PSG</b> já negociáveis.</div>
-    <div class="railband" style="margin-top:30px;font-size:24px">A Chiliz Chain é a casa. <span class="g">A Solana soma alcance e liquidez.</span></div>
+    <div class="kick">Prova · não é slide</div>
+    <div class="h1" style="font-size:44px">Juntando as quatro peças: tem dinheiro real do outro lado.</div>
+    <div class="lead" style="max-width:600px;margin-top:20px;font-size:22px">O agente lê o jogo pelo <b>MCP</b>, paga o dado pelo <b>x402</b>, escreve a tese, e o gate de risco decide se a ordem sai.</div>
+    <div class="railband" style="margin-top:28px;font-size:23px">A IA propõe, <span class="g">o código decide</span> — e o agente nunca vê a chave privada.</div>
+  </div>
+  <div class="src" style="right:640px;bottom:12px">Desk experimental do Fan Token Intel · educacional, não é recomendação</div>
+</section>
+
+<!-- 14 A AULA CARA -->
+<section class="slide">
+  <div class="toprule"></div>
+  <div class="chrome"><span>Prova</span><span>Pós-mortem</span></div>
+  <div class="body-top">
+    <div class="kick">Prova · a parte que ninguém mostra</div>
+    <div class="h1">A final da Copa foi <span style="color:var(--pepper)">a aula mais cara</span> que eu paguei.</div>
+    <div class="lead">19 de julho. Espanha 1×0 Argentina, na prorrogação. <b>Tudo o que podia dar errado, deu.</b></div>
+    <div class="lanes">
+      <div class="lane"><div class="cap">O que quebrou</div><div class="b">Execução em partes, sem <b>disjuntor</b> pra parar tudo de uma vez.</div></div>
+      <div class="lane"><div class="cap">O que mudou</div><div class="b">Breakers, ordem <b>atômica</b> e pós-mortem público antes de religar.</div></div>
+      <div class="lane"><div class="cap">Por que eu conto</div><div class="b">Se eu só mostrasse acerto, <b>você não deveria acreditar em nada aqui</b>.</div></div>
+    </div>
+    <div class="railband">Track record público, <span class="g">com os prejuízos</span> — ou não vale nada.</div>
+  </div>
+  <div class="src">Pós-mortem completo publicado · jul 2026 · educacional, não é recomendação</div>
+</section>
+
+<!-- 15 A NOVIDADE · SOLANA -->
+<section class="slide">
+  <div class="field">
+    <div class="lbl">Fan Tokens registrados na Solana</div>
+    <div class="big">85</div>
+    <div class="hr"></div>
+    <div class="note">Via <b>LayerZero</b>. Não é cópia: é <b>o mesmo ativo com passaporte</b> pra outra rede.</div>
+  </div>
+  <div class="field-left" style="top:120px">
+    <div class="kick">A novidade</div>
+    <div class="h1" style="font-size:50px">Fan Tokens agora também rodam na <span style="color:var(--pepper)">Solana</span>.</div>
+    <div class="lead" style="max-width:600px;margin-top:18px;font-size:23px">Registro oficial da Chiliz. <b>SPAIN, ARG e PSG</b> já negociáveis.</div>
+    <div class="railband" style="margin-top:26px;font-size:23px">Em português: o ativo <span class="g">saiu do nicho e foi pra onde tem liquidez de verdade</span>.</div>
+    <div class="lead" style="max-width:600px;margin-top:22px;font-size:21px">Duas redes, um ativo — e um agente lendo as duas. <b>Mais rede é mais preço, mais diferença, mais rota.</b> E tudo isso é dado.</div>
   </div>
   <div class="src" style="right:640px;bottom:12px">Fonte: registro oficial docs.chiliz.com · jul 2026 · educacional, não é recomendação</div>
 </section>
 
-<!-- 12 AS PONTAS SE LIGAM -->
+<!-- 16 FECHO -->
 <section class="slide">
   <div class="toprule"></div>
-  <div class="chrome"><span>Parte 4 · A novidade</span><span>As pontas se ligam</span></div>
-  <div class="body-top">
-    <div class="kick">Parte 4 · A novidade</div>
-    <div class="h1">Duas redes, um ativo — e um agente lendo as duas.</div>
-    <div class="metro">
-      <div class="rail"></div>
-      <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">O jogo</div><div class="b">o catalisador público</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">O ativo</div><div class="b">Chiliz <b>e</b> Solana</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">O MCP</div><div class="b">preço, gap e rota nas duas pontas</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">O x402</div><div class="b">o agente paga pelo dado</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">A ordem</div><div class="b">execução on-chain</div></div>
-      </div>
+  <div class="chrome"><span>Fan Token, MCP &amp; IA</span><span>Pra levar pra casa</span></div>
+  <div class="body-top" style="right:440px">
+    <div class="kick">Três lições de quem construiu</div>
+    <div class="h1" style="font-size:42px">O servidor está aberto.</div>
+    <div class="stack">
+      <div class="layer hot"><div class="lb">01 · Risco</div><div class="tx">A IA propõe. <b>O código decide.</b></div></div>
+      <div class="layer"><div class="lb">02 · Confiança</div><div class="tx">Track record público, <b>com os prejuízos</b>.</div></div>
+      <div class="layer"><div class="lb">03 · Produto</div><div class="tx">Construa pra agente: <b>MCP</b> pra ele ler, <b>x402</b> pra ele pagar.</div></div>
     </div>
-    <div class="railband" style="margin-top:20px">Mais rede = mais preço, mais gap, mais rota. <span class="g">Tudo isso é dado — e agora tem comprador.</span></div>
   </div>
-  <div class="src">Cobertura Solana no Fan Token Intel: mints oficiais, profundidade e whale flows · em construção</div>
-</section>
-
-<!-- 13 POR QUE O BRASIL / AGORA -->
-<section class="slide">
-  <div class="toprule"></div>
-  <div class="chrome"><span>Por que agora</span><span>Brasil</span></div>
-  <div class="body-top" style="right:450px">
-    <div class="kick">Por que agora</div>
-    <div class="h1" style="font-size:48px">O Brasil tem a torcida, o dado e a hora certa.</div>
-    <div class="lead" style="max-width:740px;margin-top:20px">A maior torcida de Fan Tokens™ do mundo. A base de dados mais rica que o setor já teve. E agentes com carteira <b>fora do papel</b>.</div>
-    <div class="railband" style="margin-top:32px">Vocês não precisam da minha permissão: <span class="g">o servidor está no ar</span>.</div>
-  </div>
-  <div class="qrcard">
+  <div class="qrcard" style="top:200px">
     <img src="__QR__" alt="QR code — fantokenintel.com">
     <div class="cap">Aponte a câmera<br><b>fantokenintel.com</b></div>
   </div>
-  <div class="src">fantokenintel.com · conecte um agente via MCP em minutos</div>
-</section>
-
-<!-- 14 CLOSER -->
-<section class="slide">
-  <div class="toprule"></div>
-  <div class="chrome"><span>Esporte, Fan Token, MCP &amp; IA</span><span>Três lições</span></div>
-  <div class="body-top">
-    <div class="kick">Três lições de quem construiu</div>
-    <div class="runway">
-      <div class="rway"><div class="t">01 · Risco</div><div class="h"><b>A IA propõe, o código decide.</b></div></div>
-      <div class="rway"><div class="t">02 · Confiança</div><div class="h"><b>Track record público ou nada.</b></div></div>
-      <div class="rway"><div class="t">03 · Produto</div><div class="h"><b>Construa para agentes:</b> MCP para ler, x402 para pagar.</div></div>
-    </div>
-  </div>
-  <div class="closer">O torcedor sempre esteve em campo.<br>Agora o <span class="g">agente</span> também está.</div>
+  <div class="footline big">O torcedor sempre esteve em campo. Agora o <span class="g">agente</span> também está.</div>
   <div class="signoff">Bruno Pessoa · Chiliz · fantokenintel.com · @brunopessoa22</div>
   <div class="band cl-band"></div>
-  <div class="src" style="bottom:54px">Obrigado · conteúdo educacional — não é recomendação de investimento</div>
+  <div class="src" style="bottom:26px;right:440px">Obrigado · conteúdo educacional — não é recomendação de investimento</div>
 </section>
 </div>
 </div>
+
 <script>
 const slides=[...document.querySelectorAll('.slide')];
 let i=0;
