@@ -237,8 +237,11 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-.stage-wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-#stage{width:1280px;height:720px;position:relative;transform-origin:center center}
+.stage-wrap{position:fixed;inset:0;overflow:hidden}
+/* absolute + translate(-50%,-50%): flex centering shifts an oversized item in a
+   scroll container (safe-alignment), which broke the deck on phones. */
+#stage{width:1280px;height:720px;position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%) scale(1);transform-origin:center center}
 .slide{position:absolute;inset:0;width:1280px;height:720px;background:var(--midnight);
   color:var(--white);display:none;overflow:hidden}
 .slide.on{display:block}
@@ -394,7 +397,8 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   @page{size:1280px 720px;margin:0}
   html,body{background:#fff;height:auto!important;overflow:visible!important}
   .stage-wrap{position:static!important;display:block!important;height:auto!important;overflow:visible!important}
-  #stage{transform:none!important;width:1280px!important;height:auto!important;position:static!important}
+  #stage{transform:none!important;width:1280px!important;height:auto!important;position:static!important;
+    left:auto!important;top:auto!important}
   #bar{display:none}
   .slide{display:block!important;position:relative!important;inset:auto!important;
     width:1280px!important;height:720px!important;overflow:hidden;page-break-after:always;break-after:page}
@@ -683,19 +687,34 @@ function show(n){
   bar.style.width=((i+1)/slides.length*100)+'%';
   history.replaceState(null,'','#'+(i+1));
 }
+let rotated=false;
 function fit(){
   const s=document.getElementById('stage');
-  const k=Math.min(window.innerWidth/1280,window.innerHeight/720);
-  s.style.transform='scale('+k+')';
+  // measure the actual .stage-wrap box (position:fixed;inset:0) — innerHeight and
+  // visualViewport both lie on mobile browsers with collapsing URL bars.
+  const w=s.parentElement.getBoundingClientRect();
+  // portrait: rotate the stage so a 16:9 deck still fills the phone screen
+  rotated = w.height > w.width;
+  const k = rotated ? Math.min(w.height/1280, w.width/720)
+                    : Math.min(w.width/1280, w.height/720);
+  s.style.transform='translate(-50%,-50%)'+(rotated?' rotate(90deg)':'')+' scale('+k+')';
 }
-window.addEventListener('resize',fit);fit();
+window.addEventListener('resize',fit);
+window.addEventListener('orientationchange',fit);
+if(window.visualViewport)window.visualViewport.addEventListener('resize',fit);
+fit();
 const h=parseInt((location.hash||'').slice(1),10);
 show(isNaN(h)?0:h-1);
 document.addEventListener('keydown',e=>{
   if(['ArrowRight',' ','PageDown'].includes(e.key)){show(i+1);e.preventDefault();}
   if(['ArrowLeft','PageUp'].includes(e.key)){show(i-1);e.preventDefault();}
 });
-document.addEventListener('click',e=>{if(e.clientX<window.innerWidth*0.3)show(i-1);else show(i+1);});
+document.addEventListener('click',e=>{
+  // when the stage is rotated, "back" is the top third of the screen
+  const back = rotated ? e.clientY < window.innerHeight*0.3
+                       : e.clientX < window.innerWidth*0.3;
+  show(back ? i-1 : i+1);
+});
 </script>
 </body>
 </html>
