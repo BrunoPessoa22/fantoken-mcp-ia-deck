@@ -248,13 +248,13 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 .chrome{position:absolute;top:34px;left:80px;right:80px;display:flex;justify-content:space-between;
   font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase}
 .toprule{position:absolute;top:28px;left:80px;right:80px;height:1px;background:var(--line)}
-.kick{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.30em;color:var(--spark);text-transform:uppercase}
-.h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1.04;letter-spacing:-.012em;margin-top:14px}
+.kick{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.30em;color:var(--spark);text-transform:uppercase}
+.h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:54px;line-height:1.05;letter-spacing:-.014em;margin-top:16px}
 .h1 .thin{font-weight:500;opacity:.62}
-.lead{font-size:15px;line-height:1.55;color:var(--dim);font-weight:400;margin-top:18px;max-width:1000px}
+.lead{font-size:24px;line-height:1.45;color:var(--dim);font-weight:400;margin-top:18px;max-width:1080px}
 .lead b{color:var(--white);font-weight:600}
 .mono{font-family:'Space Mono',monospace}
-.src{position:absolute;left:80px;bottom:34px;right:80px;font-family:'Space Mono',monospace;font-size:9px;
+.src{position:absolute;left:80px;bottom:30px;right:80px;font-family:'Space Mono',monospace;font-size:10px;
   letter-spacing:.06em;color:rgba(237,237,237,.40);text-transform:uppercase}
 
 /* progress bar */
@@ -275,12 +275,12 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 .band{position:absolute;left:0;right:0;height:14px;
   background:repeating-linear-gradient(90deg,var(--pepper) 0 46px,var(--eclipse) 46px 92px)}
 .cv-band{top:356px}
-.cv-sub{position:absolute;left:80px;top:556px;width:600px;font-size:15.5px;line-height:1.55;color:var(--dim)}
+.cv-sub{position:absolute;left:80px;top:548px;width:580px;font-size:20px;line-height:1.5;color:var(--dim)}
 .cv-sub b{color:var(--white);font-weight:600}
-.termsheet{position:absolute;right:80px;top:548px;width:440px;
-  display:grid;grid-template-columns:118px 1fr;row-gap:11px;column-gap:18px}
-.termsheet .k{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase}
-.termsheet .v{font-family:'Space Mono',monospace;font-size:12px;color:var(--white);line-height:1.4}
+.termsheet{position:absolute;right:80px;top:548px;width:460px;
+  display:grid;grid-template-columns:126px 1fr;row-gap:12px;column-gap:18px}
+.termsheet .k{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase}
+.termsheet .v{font-family:'Space Mono',monospace;font-size:14px;color:var(--white);line-height:1.4}
 
 /* generic layout */
 .body-top{position:absolute;top:150px;left:80px;right:80px}
@@ -289,100 +289,103 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 
 /* ledger */
 .ledger{margin-top:26px;border-top:1px solid var(--line)}
-.led-row{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:19px 0;border-bottom:1px solid var(--lineS)}
-.led-n{font-family:'Space Mono',monospace;font-size:13px;color:var(--pepper);font-weight:700}
-.led-h{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;margin-bottom:6px}
-.led-b{font-size:13.5px;line-height:1.5;color:var(--dim)}
+.led-row{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:17px 0;border-bottom:1px solid var(--lineS)}
+.led-n{font-family:'Space Mono',monospace;font-size:16px;color:var(--pepper);font-weight:700;padding-top:6px}
+.led-h{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:27px;margin-bottom:7px}
+.led-b{font-size:21px;line-height:1.45;color:var(--dim)}
 .led-b b{color:var(--white);font-weight:600}
 .ledger.tight .led-row{padding:14px 0}
 
 /* big number field */
-.field{position:absolute;top:0;right:0;bottom:0;width:560px;background:var(--pepper);color:var(--ink);
-  padding:96px 64px;display:flex;flex-direction:column;justify-content:center}
-.field .lbl{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.16em;
+.field{position:absolute;top:0;right:0;bottom:0;width:520px;background:var(--pepper);color:var(--ink);
+  padding:96px 56px;display:flex;flex-direction:column;justify-content:center}
+.field .lbl{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.16em;
   text-transform:uppercase;color:rgba(20,1,42,.70)}
-.field .big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:112px;line-height:.9;
-  letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin:8px 0 28px}
+.field .big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:140px;line-height:.9;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin:10px 0 28px}
 .field .hr{height:1px;background:rgba(20,1,42,.28);margin:0 0 28px}
-.field .note{font-size:14px;line-height:1.55;color:rgba(20,1,42,.84);max-width:420px}
+.field .note{font-size:20px;line-height:1.5;color:rgba(20,1,42,.84);max-width:410px}
 .field .note b{color:var(--ink)}
-.field-left{position:absolute;top:150px;left:80px;width:540px}
+.field-left{position:absolute;top:150px;left:80px;width:620px}
 
 /* stat wall */
-.statwall{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:36px}
-.stat{padding:24px 22px 24px 0;border-right:1px solid var(--lineS)}
+.statwall{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:30px}
+.stat{padding:22px 20px 20px 0;border-right:1px solid var(--lineS)}
 .stat:last-child{border-right:none}
-.stat .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:42px;line-height:1;
+.stat .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:60px;line-height:1;
   color:var(--pepper);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.stat .n small{font-size:20px;letter-spacing:0}
-.stat .l{font-size:12.5px;line-height:1.45;color:var(--dim);margin-top:12px;font-weight:600}
+.stat .n small{font-size:26px;letter-spacing:0}
+.stat .l{font-size:17px;line-height:1.4;color:var(--dim);margin-top:12px;font-weight:600}
 
 /* lanes */
 .lanes{display:flex;gap:56px;margin-top:36px}
 .lane{flex:1}
-.lane .cap{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:var(--pepper);
-  text-transform:uppercase;margin-bottom:12px;border-top:1px solid var(--line);padding-top:14px}
-.lane .b{font-size:13.5px;line-height:1.6;color:var(--dim)}
+.lane .cap{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.16em;color:var(--pepper);
+  text-transform:uppercase;margin-bottom:14px;border-top:1px solid var(--line);padding-top:16px}
+.lane .b{font-size:22px;line-height:1.5;color:var(--dim)}
 .lane b{color:var(--white);font-weight:600}
 
 /* railband */
-.railband{margin-top:42px;padding:22px 28px;background:var(--panel);border-left:3px solid var(--pepper);
-  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:21px;line-height:1.3}
+.railband{margin-top:42px;padding:26px 32px;background:var(--panel);border-left:3px solid var(--pepper);
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:27px;line-height:1.35}
 .railband .g{color:var(--pepper)}
 
 /* metro */
-.metro{position:relative;margin-top:46px;height:150px}
+.metro{position:relative;margin-top:46px;height:180px}
 .metro .rail{position:absolute;top:24px;left:2%;right:2%;height:2px;background:var(--pepper);opacity:.55}
 .metro .stops{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between}
 .mstop{width:19%;text-align:center;position:relative}
 .metro.m4 .mstop{width:23%}
 .mstop .dot{width:14px;height:14px;border-radius:50%;background:var(--pepper);margin:17px auto 0;
   border:3px solid var(--midnight);box-shadow:0 0 0 2px var(--pepper)}
-.mstop .h{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;margin-top:16px}
-.mstop .b{font-size:11.5px;line-height:1.45;color:var(--faint);margin-top:7px;padding:0 6px}
+.mstop .h{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;margin-top:18px}
+.mstop .b{font-size:16px;line-height:1.4;color:var(--faint);margin-top:8px;padding:0 6px}
 .mstop .b b{color:var(--dim)}
 
 /* stack + layers */
 .stack{display:flex;flex-direction:column;gap:10px;margin-top:30px}
-.layer{display:grid;grid-template-columns:200px 1fr;gap:18px;padding:17px 20px;background:var(--panel);align-items:center}
+.layer{display:grid;grid-template-columns:280px 1fr;gap:20px;padding:18px 24px;background:var(--panel);align-items:center}
 .layer.hot{border-left:3px solid var(--pepper)}
-.layer .lb{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--pepper);text-transform:uppercase;line-height:1.5}
-.layer .tx{font-size:13.5px;color:var(--dim);line-height:1.5}
+.layer .lb{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.14em;color:var(--pepper);text-transform:uppercase;line-height:1.5}
+.layer .tx{font-size:21px;color:var(--dim);line-height:1.45}
 .layer .tx b{color:var(--white)}
 
 /* chat mock */
-.chat{margin-top:34px;display:flex;flex-direction:column;gap:14px;max-width:900px}
-.msg{padding:16px 22px;font-size:14.5px;line-height:1.55;max-width:640px}
+.chat{margin-top:22px;display:flex;flex-direction:column;gap:10px;max-width:1020px}
+.chat .who{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;
+  color:var(--faint);text-transform:uppercase;margin-top:6px}
+.chat .who.right{align-self:flex-end}
+.msg{padding:18px 26px;font-size:23px;line-height:1.45;max-width:820px}
 .msg.user{align-self:flex-end;background:var(--eclipse);color:var(--white)}
 .msg.agent{align-self:flex-start;background:var(--panel);color:var(--dim)}
 .msg.agent b{color:var(--white)}
 .msg.tool{align-self:flex-start;background:none;border:1px dashed var(--line);
-  font-family:'Space Mono',monospace;font-size:12px;color:var(--spark);padding:12px 18px}
+  font-family:'Space Mono',monospace;font-size:16px;color:var(--spark);padding:14px 20px}
 
 /* qr card */
 .qrcard{position:absolute;right:80px;top:196px;width:300px;background:var(--white);
   padding:26px 26px 22px;display:flex;flex-direction:column;align-items:center;gap:16px}
 .qrcard img{width:232px;height:232px;display:block}
-.qrcard .cap{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.10em;
+.qrcard .cap{font-family:'Space Mono',monospace;font-size:13.5px;letter-spacing:.10em;
   color:var(--ink);text-transform:uppercase;text-align:center;line-height:1.7}
 .qrcard .cap b{color:var(--pepper)}
 
 /* footline */
-.footline{position:absolute;left:80px;bottom:60px;right:80px;font-size:14.5px;color:var(--dim)}
+.footline{position:absolute;left:80px;bottom:56px;right:80px;font-size:20px;color:var(--dim)}
 .footline b{color:var(--white)}
 .footline .g{color:var(--pepper);font-weight:700}
 
 /* closer */
 .runway{display:flex;gap:0;margin-top:26px;border-top:1px solid var(--line)}
-.rway{flex:1;padding:24px 30px 24px 0;border-right:1px solid var(--lineS)}
+.rway{flex:1;padding:26px 30px 26px 0;border-right:1px solid var(--lineS)}
 .rway:last-child{border-right:none}
-.rway .t{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--pepper);text-transform:uppercase}
-.rway .h{font-size:14px;line-height:1.55;color:var(--dim);margin-top:12px}
+.rway .t{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.14em;color:var(--pepper);text-transform:uppercase}
+.rway .h{font-size:22px;line-height:1.45;color:var(--dim);margin-top:14px}
 .rway .h b{color:var(--white)}
-.closer{position:absolute;left:80px;right:80px;top:420px;font-family:'Space Grotesk',sans-serif;
-  font-weight:700;font-size:52px;line-height:1.05;letter-spacing:-.018em;max-width:1060px}
+.closer{position:absolute;left:80px;right:80px;top:430px;font-family:'Space Grotesk',sans-serif;
+  font-weight:700;font-size:58px;line-height:1.05;letter-spacing:-.018em;max-width:1100px}
 .closer .g{color:var(--pepper)}
-.signoff{position:absolute;left:80px;bottom:96px;font-family:'Space Mono',monospace;font-size:13px;
+.signoff{position:absolute;left:80px;bottom:96px;font-family:'Space Mono',monospace;font-size:15px;
   letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
 .cl-band{position:absolute;bottom:0;left:0;right:0}
 
@@ -428,7 +431,7 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="chrome"><span>Esporte, Fan Token, MCP &amp; IA</span><span>Roteiro</span></div>
   <div class="body-top">
     <div class="kick">Roteiro</div>
-    <div class="h1">Da arquibancada ao agente autônomo<span class="thin"> — em quatro partes.</span></div>
+    <div class="h1">Da arquibancada ao agente autônomo.</div>
     <div class="lead">Nada aqui é teoria. <b>Tudo está em produção</b> — com dinheiro real e cicatrizes documentadas.</div>
     <div class="metro m4">
       <div class="rail"></div>
@@ -456,14 +459,9 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
       <div class="led-row"><div class="led-n">02</div><div><div class="led-h">O que dá</div><div class="led-b">Voto, experiências, acesso — <b>engajamento com preço de mercado</b>, 24/7.</div></div></div>
       <div class="led-row"><div class="led-n">03</div><div><div class="led-h">O que não é</div><div class="led-b">Não é ação nem promessa de lucro. É <b>participação de torcida</b>.</div></div></div>
     </div>
-    <div class="statwall">
-      <div class="stat"><div class="n">65+</div><div class="l">Fan Tokens™ de clubes e seleções</div></div>
-      <div class="stat"><div class="n">Nº1</div><div class="l">Brasil: o maior mercado de Fan Tokens™ do mundo</div></div>
-      <div class="stat"><div class="n">24/7</div><div class="l">mercado global, líquido e on-chain</div></div>
-      <div class="stat"><div class="n">2018</div><div class="l">a Chiliz cria a categoria — o pioneiro do SportFi</div></div>
-    </div>
   </div>
-  <div class="src" style="bottom:24px">Fonte: Chiliz · Socios.com</div>
+  <div class="footline"><b>65+ Fan Tokens™</b> de clubes e seleções · <span class="g">Brasil: o maior mercado do mundo</span> · desde 2018</div>
+  <div class="src">Fonte: Chiliz · Socios.com</div>
 </section>
 
 <!-- 04 O ATIVO COM CALENDÁRIO -->
@@ -472,19 +470,19 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="lbl">Matchdays medidos</div>
     <div class="big">440</div>
     <div class="hr"></div>
-    <div class="note">Cada linha liga um <b>jogo real</b> a uma <b>reação real de preço</b> — minuto a minuto, antes, durante e depois do apito. É a base de dados que nenhum feed genérico tem.</div>
+    <div class="note">Cada linha liga um <b>jogo real</b> a uma <b>reação real de preço</b>. A base que nenhum feed genérico tem.</div>
   </div>
-  <div class="field-left" style="top:118px">
+  <div class="field-left" style="top:104px">
     <div class="kick">Parte 1 · O ativo</div>
-    <div class="h1" style="font-size:38px">O único ativo que anuncia seus catalisadores com semanas de antecedência.</div>
-    <div class="lead" style="max-width:540px;margin-top:14px">Ação reage a balanço. Cripto reage a macro. <b>Fan Token™ reage a jogo</b> — e o calendário de jogos é público.</div>
+    <div class="h1" style="font-size:44px">O único ativo que anuncia seus catalisadores com semanas de antecedência.</div>
+    <div class="lead" style="max-width:600px;margin-top:14px;font-size:22px">Ação reage a balanço. Cripto reage a macro. <b>Fan Token™ reage a jogo.</b></div>
     <div class="ledger tight" style="margin-top:20px">
       <div class="led-row"><div class="led-n">01</div><div><div class="led-h">O empate custa caro</div><div class="led-b">Queda média de <b>~1,7% nas 24h seguintes</b>.</div></div></div>
       <div class="led-row"><div class="led-n">02</div><div><div class="led-h">A dor pesa mais que a alegria</div><div class="led-b">Derrota e empate movem <b>mais</b> que vitória.</div></div></div>
-      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">Quase 4.000 partidas mapeadas</div><div class="led-b">Minuto a minuto — antes, durante e depois do apito.</div></div></div>
+      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">Medido minuto a minuto</div><div class="led-b">Do apito inicial às 24h seguintes.</div></div></div>
     </div>
   </div>
-  <div class="src" style="right:640px">Fonte: Fan Token Intel · dados históricos · educacional, não é recomendação</div>
+  <div class="src" style="right:640px;bottom:12px">Fonte: Fan Token Intel · dados históricos · educacional, não é recomendação</div>
 </section>
 
 <!-- 05 MCP -->
@@ -497,7 +495,7 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="lead"><b>Model Context Protocol</b> — padrão aberto (Anthropic, 2024), hoje adotado por OpenAI, Google e Microsoft.</div>
     <div class="lanes">
       <div class="lane"><div class="cap">Antes do MCP</div><div class="b">Cada modelo × cada sistema = <b>uma integração sob medida</b>. Ninguém constrói para nichos.</div></div>
-      <div class="lane"><div class="cap">Com MCP</div><div class="b"><b>Um servidor, uma vez</b> — e qualquer agente conecta: Claude, ChatGPT, Cursor.</div></div>
+      <div class="lane"><div class="cap">Com MCP</div><div class="b">Você expõe <b>um servidor, uma vez</b> — e toda IA conecta: Claude, ChatGPT, Cursor.</div></div>
     </div>
     <div class="railband">Quem tem o dado <span class="g">vira infraestrutura</span>: todo agente de IA do mundo passa a ser um cliente em potencial.</div>
   </div>
@@ -513,10 +511,10 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="h1">Fan Token Intel: o primeiro MCP de Fan Tokens™ do mundo.</div>
     <div class="lead">O servidor que deixa <b>qualquer agente de IA ler o mercado de fan tokens</b> — preço, baleias, impacto de partida, odds, liquidez. Em produção.</div>
     <div class="statwall">
-      <div class="stat"><div class="n">120+</div><div class="l">ferramentas de dados expostas via MCP</div></div>
-      <div class="stat"><div class="n">23,7<small>mil</small></div><div class="l">ticks de odds capturados — incluindo a final da Copa 2026</div></div>
-      <div class="stat"><div class="n">1.052</div><div class="l">eventos de preço anômalos mapeados minuto a minuto</div></div>
-      <div class="stat"><div class="n">9/10</div><div class="l">nota em auditoria externa independente do servidor</div></div>
+      <div class="stat"><div class="n">120+</div><div class="l">ferramentas de dados via MCP</div></div>
+      <div class="stat"><div class="n">23,7<small>mil</small></div><div class="l">cotações de odds — com a final da Copa 2026</div></div>
+      <div class="stat"><div class="n">1.052</div><div class="l">reações de preço fora do padrão</div></div>
+      <div class="stat"><div class="n">9/10</div><div class="l">nota em auditoria externa independente</div></div>
     </div>
   </div>
   <div class="footline">Track record aberto ao público — <b>inclusive os prejuízos</b>: <span class="g">fantokenintel.com/track-record</span></div>
@@ -527,17 +525,20 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 <section class="slide">
   <div class="toprule"></div>
   <div class="chrome"><span>Parte 2 · O protocolo</span><span>Demonstração</span></div>
-  <div class="body-top">
+  <div class="body-top" style="top:128px">
     <div class="kick">Parte 2 · O protocolo</div>
     <div class="h1">Na prática: pergunte ao agente.</div>
     <div class="chat">
-      <div class="msg user">O que acontece com o token do Flamengo quando o time empata em casa?</div>
+      <div class="who right">Você pergunta</div>
+      <div class="msg user">O que acontece com o token do Flamengo em empate?</div>
+      <div class="who">O agente consulta o MCP</div>
       <div class="msg tool">→ tokenintel_match_impact_history (token: MENGO, resultado: empate)</div>
+      <div class="who">E responde com dados reais</div>
       <div class="msg agent">Nos empates mapeados, o <b>$MENGO tende a cair nas 24h seguintes ao apito</b>. Próximo jogo em casa: domingo. <b>Quer o perfil completo?</b></div>
     </div>
-    <div class="railband">Zero código. Zero planilha. O dado do nicho <span class="g">dentro da conversa</span> — isso é um servidor MCP.</div>
+    <div class="railband" style="margin-top:12px">O dado do nicho, dentro da conversa — <span class="g">isso é um servidor MCP</span>.</div>
   </div>
-  <div class="src">Diálogo ilustrativo sobre dados reais do Fan Token Intel · educacional, não é recomendação</div>
+  <div class="src" style="bottom:10px">Diálogo ilustrativo sobre dados reais do Fan Token Intel · educacional, não é recomendação</div>
 </section>
 
 <!-- 08 AGENTIC TRADING -->
@@ -554,11 +555,11 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="metro">
       <div class="rail"></div>
       <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">Percepção</div><div class="b">dados do mercado via MCP</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Tese</div><div class="b">o agente escreve o porquê</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Proposta</div><div class="b">tamanho, entrada e saída</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Validação</div><div class="b">gate de risco <b>em código</b></div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Execução</div><div class="b">ordem na venue + memória do resultado</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Percepção</div><div class="b">dados via MCP</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Tese</div><div class="b">o porquê, por escrito</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Proposta</div><div class="b">tamanho, entrada, saída</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Validação</div><div class="b">risco <b>em código</b></div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Execução</div><div class="b">ordem real + memória</div></div>
       </div>
     </div>
   </div>
@@ -571,9 +572,9 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="chrome"><span>Parte 3 · O agente</span><span>Arquitetura de risco</span></div>
   <div class="body-top">
     <div class="kick">Parte 3 · O agente</div>
-    <div class="h1">A regra que salva o cofre: <span style="color:var(--pepper)">o LLM propõe, o código decide.</span></div>
+    <div class="h1">A IA propõe, <span style="color:var(--pepper)">o código decide.</span></div>
     <div class="stack" style="margin-top:24px">
-      <div class="layer"><div class="lb">Analista · LLM</div><div class="tx">Lê o mercado via MCP e escreve a tese. <b>Criativo — e falível.</b></div></div>
+      <div class="layer"><div class="lb">Analista · IA</div><div class="tx">Lê o mercado via MCP e escreve a tese. <b>Criativo — e falível.</b></div></div>
       <div class="layer hot"><div class="lb">Gate de risco · código</div><div class="tx">Posição <b>≤15%</b> · exposição <b>≤45%</b> · breaker diário <b>−8%</b> · <b>falha fechado</b>.</div></div>
       <div class="layer"><div class="lb">Executor · código</div><div class="tx">Stops, trailing e kill-switch. <b>Sem exceções.</b></div></div>
       <div class="layer"><div class="lb">Carteira</div><div class="tx">O agente <b>nunca vê a chave privada</b>.</div></div>
@@ -587,18 +588,18 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
 <section class="slide">
   <div class="toprule"></div>
   <div class="chrome"><span>Parte 3 · O agente</span><span>Pós-mortem</span></div>
-  <div class="body-top">
+  <div class="body-top" style="top:134px">
     <div class="kick">Parte 3 · O agente</div>
     <div class="h1">A final da Copa: nossa aula mais cara.</div>
-    <div class="lead">19 de julho de 2026. Espanha 1×0 Argentina, na prorrogação. <b>Tudo o que podia dar errado, deu.</b></div>
-    <div class="ledger tight" style="max-width:1060px">
+    <div class="lead" style="margin-top:12px">19 de julho de 2026. Espanha 1×0 Argentina, na prorrogação. <b>Tudo o que podia dar errado, deu.</b></div>
+    <div class="ledger tight" style="max-width:1060px;margin-top:14px">
       <div class="led-row"><div class="led-n">01</div><div><div class="led-h">O feed de odds era o mercado errado</div><div class="led-b">O 1X2 dos 90 minutos <b>travou os gatilhos</b>.</div></div></div>
       <div class="led-row"><div class="led-n">02</div><div><div class="led-h">Um swap revertido doou 1.400 CHZ</div><div class="led-b"><b>Execução atômica ou nada.</b></div></div></div>
-      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">O contrafactual foi o pior golpe</div><div class="led-b">Se tudo funcionasse, <b>a estratégia também perdia</b>.</div></div></div>
+      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">E se tudo tivesse funcionado?</div><div class="led-b">Refizemos a conta: <b>a estratégia também perdia</b>.</div></div></div>
     </div>
-    <div class="railband" style="margin-top:30px">Breakers, execução atômica, pós-mortem público: <span class="g">pré-requisitos para religar</span>.</div>
+    <div class="railband" style="margin-top:16px;font-size:24px">Breakers, execução atômica, pós-mortem público: <span class="g">pré-requisitos para religar</span>.</div>
   </div>
-  <div class="src">Pós-mortem completo com 11 agentes de auditoria · jul 2026</div>
+  <div class="src" style="bottom:10px">Pós-mortem completo com 11 agentes de auditoria · jul 2026</div>
 </section>
 
 <!-- 11 O QUE FUNCIONOU -->
@@ -611,9 +612,9 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   </div>
   <div class="field-left">
     <div class="kick">Parte 3 · O agente</div>
-    <div class="h1" style="font-size:38px">O que sobreviveu ao teste.</div>
+    <div class="h1" style="font-size:44px">O que sobreviveu ao teste.</div>
     <div class="ledger" style="margin-top:30px">
-      <div class="led-row"><div class="led-n">01</div><div><div class="led-h">O drift pós-resultado é real</div><div class="led-b">Confirmado em <b>180 dias de dados</b> — virou a nova família de sinais.</div></div></div>
+      <div class="led-row"><div class="led-n">01</div><div><div class="led-h">A queda pós-resultado é real</div><div class="led-b">Confirmada em <b>180 dias de dados</b> — virou a nova família de sinais.</div></div></div>
       <div class="led-row"><div class="led-n">02</div><div><div class="led-h">O pipeline completo fecha</div><div class="led-b">MCP → tese → gate → ordem → <b>ledger auditado</b>.</div></div></div>
     </div>
   </div>
@@ -628,20 +629,20 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="kick">Parte 4 · A fusão</div>
     <div class="h1">x402: o agente ganhou carteira.</div>
     <div class="lead">O HTTP 402 — <b>"Payment Required"</b> — esperou 30 anos pelo seu pagador. Chegou: <b>o agente de IA</b>. Fan Token Intel listado no marketplace da OKX.</div>
-    <div class="metro m4">
+    <div class="metro m4" style="margin-top:28px;height:150px">
       <div class="rail"></div>
       <div class="stops">
-        <div class="mstop"><div class="dot"></div><div class="h">Pedido</div><div class="b">o agente chama o dado que quer</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">402</div><div class="b">o servidor responde com o preço</div></div>
-        <div class="mstop"><div class="dot"></div><div class="h">Assinatura</div><div class="b">o agente assina o pagamento em stablecoin</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Pedido</div><div class="b">o agente chama o dado</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">402</div><div class="b">o servidor responde o preço</div></div>
+        <div class="mstop"><div class="dot"></div><div class="h">Assinatura</div><div class="b">o agente assina em stablecoin</div></div>
         <div class="mstop"><div class="dot"></div><div class="h">Entrega</div><div class="b">liquidação <b>on-chain</b>, dado liberado</div></div>
       </div>
     </div>
-    <div class="statwall" style="margin-top:26px">
-      <div class="stat"><div class="n">$0,01<small>–0,30</small></div><div class="l">por chamada — micropagamento, não assinatura</div></div>
-      <div class="stat"><div class="n">19</div><div class="l">produtos de dados à venda por chamada</div></div>
-      <div class="stat"><div class="n">0</div><div class="l">contas, cartões ou mensalidades</div></div>
-      <div class="stat"><div class="n">100%</div><div class="l">liquidado on-chain, em stablecoin, com recibo público</div></div>
+    <div class="statwall" style="margin-top:14px">
+      <div class="stat"><div class="n">$0,01</div><div class="l">a $0,30 por chamada</div></div>
+      <div class="stat"><div class="n">19</div><div class="l">produtos de dados à venda</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">contas, cartões, mensalidades</div></div>
+      <div class="stat"><div class="n">100%</div><div class="l">on-chain, com recibo público</div></div>
     </div>
   </div>
   <div class="src">Gateway x402 em produção · liquidação em USDT0 na X Layer · marketplace OKX OnchainOS</div>
@@ -664,7 +665,7 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
         <div class="mstop"><div class="dot"></div><div class="h">Execução</div><div class="b">on-chain — e o resultado vira memória</div></div>
       </div>
     </div>
-    <div class="railband" style="margin-top:56px">Modelos viram clientes. Dados viram produto por chamada. <span class="g">Distribuição vira protocolo.</span></div>
+    <div class="railband" style="margin-top:34px;font-size:25px">Modelos viram clientes. Dados viram produto. <span class="g">Distribuição vira protocolo.</span></div>
   </div>
   <div class="src">Cada etapa deste loop está em produção hoje — fantokenintel.com</div>
 </section>
@@ -678,7 +679,7 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
     <div class="h1">O Brasil tem a torcida, o dado e a hora certa.</div>
     <div class="lanes">
       <div class="lane"><div class="cap">A torcida</div><div class="b">O <b>maior mercado de Fan Tokens™ do mundo</b>.</div></div>
-      <div class="lane"><div class="cap">O dado</div><div class="b">A Copa de 2026 gerou <b>o tape mais rico da história do setor</b> — aberto via MCP.</div></div>
+      <div class="lane"><div class="cap">O dado</div><div class="b">A Copa de 2026 gerou <b>a base de dados mais rica da história do setor</b> — aberta via MCP.</div></div>
       <div class="lane"><div class="cap">A hora</div><div class="b">Agentes com carteira saíram do paper. <b>MCP é padrão, x402 é protocolo.</b></div></div>
     </div>
     <div class="railband">Vocês não precisam da minha permissão: <span class="g">o servidor está no ar</span> — conectem um agente ainda hoje.</div>
@@ -693,11 +694,11 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="body-top" style="right:450px">
     <div class="kick">Antes de fechar · novidade</div>
     <div class="h1" style="font-size:40px">Fan Tokens™ agora rodam na Solana.</div>
-    <div class="lead" style="max-width:680px;margin-top:14px">Registro oficial da Chiliz: <b>~85 fan tokens na Solana via LayerZero OFT</b> — dez negociáveis hoje, <b>SPAIN, ARG e PSG</b> na frente.</div>
+    <div class="lead" style="max-width:740px;margin-top:14px;font-size:22px">Registro oficial da Chiliz: <b>~85 fan tokens na Solana via LayerZero OFT</b> — dez negociáveis hoje, <b>SPAIN, ARG e PSG</b> na frente.</div>
     <div class="ledger tight" style="margin-top:20px">
       <div class="led-row"><div class="led-n">01</div><div><div class="led-h">Mesmo ativo, novas redes</div><div class="led-b">A Chiliz Chain é a casa; a Solana soma <b>alcance e liquidez</b>.</div></div></div>
-      <div class="led-row"><div class="led-n">02</div><div><div class="led-h">A oportunidade para o MCP</div><div class="led-b">O par <b>Chiliz ↔ Solana</b> inteiro: profundidade, gaps de preço, rotas — <b>pronto para agentes</b>.</div></div></div>
-      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">Solana-ready: o que vem</div><div class="led-b">Mints canônicos no coletor · profundidade <b>Jupiter/Meteora</b> · whale flows e gap cross-chain.</div></div></div>
+      <div class="led-row"><div class="led-n">02</div><div><div class="led-h">A oportunidade para o MCP</div><div class="led-b">O par <b>Chiliz ↔ Solana</b>: preços, gaps, rotas — <b>pronto para agentes</b>.</div></div></div>
+      <div class="led-row"><div class="led-n">03</div><div><div class="led-h">Solana-ready: o que vem</div><div class="led-b">Mints oficiais, profundidade real, whale flows — <b>no MCP e no x402</b>.</div></div></div>
     </div>
   </div>
   <div class="qrcard">
@@ -714,7 +715,7 @@ html,body{background:#120124;height:100%;font-family:'Manrope',sans-serif;-webki
   <div class="body-top">
     <div class="kick">Três lições de quem construiu</div>
     <div class="runway">
-      <div class="rway"><div class="t">01 · Risco</div><div class="h"><b>O LLM propõe, o código decide.</b></div></div>
+      <div class="rway"><div class="t">01 · Risco</div><div class="h"><b>A IA propõe, o código decide.</b></div></div>
       <div class="rway"><div class="t">02 · Confiança</div><div class="h"><b>Track record público ou nada.</b></div></div>
       <div class="rway"><div class="t">03 · Produto</div><div class="h"><b>Construa para agentes:</b> MCP para ler, x402 para pagar.</div></div>
     </div>
